@@ -538,7 +538,7 @@ if __name__ == "__main__":
 		)
 		makefile["rule"]["build/nowar/{}.ttf".format(GenerateFilename(param))] = {
 			"depend": ["build/nowar/{}.otd".format(GenerateFilename(param))],
-			"command": [ "otfccbuild -q -O3 --stub-cmap4 --keep-average-char-width $< -o $@" ]
+			"command": [ "otfccbuild -q -O3 --keep-average-char-width $< -o $@" ]
 		}
 		dep = ResolveDependency(param)
 		makefile["rule"]["build/nowar/{}.otd".format(GenerateFilename(param))] = {
@@ -578,7 +578,7 @@ if __name__ == "__main__":
 			)
 			makefile["rule"]["build/nowar/{}.ttf".format(GenerateFilename(enc))] = {
 				"depend": ["build/nowar/{}.otd".format(GenerateFilename(enc))],
-				"command": [ "otfccbuild -q -O3 --stub-cmap4 --keep-average-char-width $< -o $@" ]
+				"command": [ "otfccbuild -q -O3 --keep-average-char-width $< -o $@" ]
 			}
 			makefile["rule"]["build/nowar/{}.otd".format(GenerateFilename(enc))] = {
 				"depend": ["build/nowar/{}.otd".format(GenerateFilename(param))],
@@ -597,7 +597,7 @@ if __name__ == "__main__":
 		)
 		makefile["rule"]["build/nowar/{}.ttf".format(GenerateFilename(param))] = {
 			"depend": ["build/nowar/{}.otd".format(GenerateFilename(param))],
-			"command": [ "otfccbuild -q -O3 --stub-cmap4 --keep-average-char-width $< -o $@" ]
+			"command": [ "otfccbuild -q -O3 --keep-average-char-width $< -o $@" ]
 		}
 		dep = ResolveDependency(param)
 		makefile["rule"]["build/nowar/{}.otd".format(GenerateFilename(param))] = {
@@ -644,7 +644,7 @@ if __name__ == "__main__":
 			)
 			makefile["rule"]["build/nowar/{}.ttf".format(GenerateFilename(enc))] = {
 				"depend": ["build/nowar/{}.otd".format(GenerateFilename(enc))],
-				"command": [ "otfccbuild -q -O3 --stub-cmap4 --keep-average-char-width $< -o $@" ]
+				"command": [ "otfccbuild -q -O3 --keep-average-char-width $< -o $@" ]
 			}
 			makefile["rule"]["build/nowar/{}.otd".format(GenerateFilename(enc))] = {
 				"depend": ["build/nowar/{}.otd".format(GenerateFilename(param))],
@@ -661,7 +661,7 @@ if __name__ == "__main__":
 		)
 		makefile["rule"]["build/nowar/{}.ttf".format(GenerateFilename(param))] = {
 			"depend": ["build/nowar/{}.otd".format(GenerateFilename(param))],
-			"command": [ "otfccbuild -q -O3 --stub-cmap4 --keep-average-char-width $< -o $@" ]
+			"command": [ "otfccbuild -q -O3 --keep-average-char-width $< -o $@" ]
 		}
 		dep = ResolveDependency(param)
 		makefile["rule"]["build/nowar/{}.otd".format(GenerateFilename(param))] = {
