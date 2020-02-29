@@ -1,0 +1,3 @@
+[submodule "libotd"]
+	path = libotd
+	url = git@github.com:nowar-fonts/libotd.git
