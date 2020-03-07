@@ -5,6 +5,7 @@ import codecs
 from types import SimpleNamespace as Namespace
 from libotd.merge import MergeBelow, MergeAbove
 from libotd.pkana import ApplyPalt, NowarApplyPaltMultiplied
+from libotd.dereference import Dereference
 from libotd.transform import Transform, ChangeAdvanceWidth
 from libotd.gsub import GetGsubFlat, ApplyGsubSingle
 from libotd.gc import Gc, NowarRemoveFeatures
@@ -218,6 +219,10 @@ if __name__ == '__main__':
 			maxWidth = 490
 			numWidth = numFont['glyf'][num[0]]['advanceWidth']
 			changeWidth = maxWidth - numWidth if numWidth > maxWidth else 0
+
+			# dereference glyphs for futher modification
+			for n in num + pnum + onum + tonum:
+				numFont['glyf'][n] = Dereference(numFont['glyf'][n], numFont)
 
 			for n in num + tonum:
 				tGlyph = numFont['glyf'][n]
