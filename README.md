@@ -17,7 +17,7 @@ War Sans, font packs for _World of Warcraft_ and _WoW Classic_ that support all 
 
 Mirrors: [Gitee (Release Repo)](https://gitee.com/nowar-fonts/War-Sans-TT)
 
-Nowar Sans is shipped in 4 weights and 10 regional variants.
+War Sans is shipped in 4 weights and 7 regional variants, with several features.
 
 ### Weights
 
@@ -59,7 +59,7 @@ GBK and Big5 are “subset variants”, which are designed for 简体中文 and 
 * UI: Ambiguous punctations are treated as Western; CJK puctations are half-width.
 * Common fonts: `FRIZQT__` and `ARIALN`, which are hard-coded in some addons.
 
-#### Features
+### Features
 
 | Tag | Name        | Description                                                            |
 | --- | ----------- | ---------------------------------------------------------------------- |
