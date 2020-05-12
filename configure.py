@@ -104,8 +104,8 @@ regionalVariant = {
         "base": "Big5",
         "enUS": None,
         "ruRU": None,
-        "zhCN": "Big5",
-        "zhTW": None,
+        "zhCN": None,
+        "zhTW": "Big5",
         "koKR": None,
     },
     "CN": {  # deprecated
